@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Kany Institute</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      overflow: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="Kany">
+        <span class="typed-text"></span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about_us">About us</a></li>
+          <li><a href="#academies">Academies</a></li>
+          <li><a href="applying_information.html">Admissions</a></li>
+          <li><a href="#contact_us">Contact us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="container">
+    <div class="content">
+      <div class="image-container">
+        <div class="image">
+          <img src="path/to/image.jpg" alt="Image">
+        </div>
+      </div>
+      <div class="paragraph-text">
+        <div class="paragraph">
+          <p>"Welcome to Kany Institute, where we are dedicated to unlocking your potential and shaping your future. At Kany Institute, we believe in empowering minds through quality education and innovative programs. Our experienced faculty and state-of-the-art facilities provide a nurturing environment for students to thrive academically, socially, and personally. Whether you're seeking a solid foundation for higher education or looking to enhance your professional skills, we offer a wide range of programs tailored to meet your needs. Join us on a transformative educational journey and discover endless opportunities. Apply now and take the first step towards a brighter future with Kany Institute"</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var typed = new Typed('.typed-text', {
+        strings: ["Welcome to Kany Institute", "Unlocking your potential", "Shaping your future"],
+        typeSpeed: 80,
+        backSpeed: 50,
+        loop: true
+      });
+    });
+
+    // Initialize ScrollReveal
+    ScrollReveal({
+      distance: '20px',
+      duration: 1000,
+      easing: 'cubic-bezier(0.5, 0, 0, 1)',
+      mobile: false
+    });
+
+    // Configure the elements to animate
+    ScrollReveal().reveal('.Kany', {
+      origin: 'left',
+      interval: 200
+    });
+
+    ScrollReveal().reveal('.image', {
+      origin: 'right',
+      interval: 200
+    });
+
+    ScrollReveal().reveal('.paragraph', {
+      origin: 'left',
+      interval: 200
+    });
+  </script>
+
+</body>
+
+</html>

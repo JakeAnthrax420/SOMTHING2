@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #071023;
+}
+
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+header {
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #071023; /* Update the background color here */
+  padding: 20px 0;
+  z-index: 999;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+nav li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+
+nav li a {
+  display: block;
+  padding: 10px 15px;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  transition: color 0.3s ease, opacity 0.3s ease;
+  
+}
+
+
+nav li a:hover {
+  color: #0088ff; /* Update hover text color to black */
+  opacity: 0.8; /* Set the desired opacity value on hover */
+}
+
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.paragraph-text {
+  flex: 1;
+  text-align: left;
+  color: #ffffff;
+  font-size: 20px;
+  user-select: none;
+  margin-top: 300px;
+  margin-right: 350px;
+}
+
+
+.image-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+
+.image-container img {
+  width: 700px;
+  height: 700px;
+  margin-top: 345px;
+  margin-right: 100px;
+}
+
+
+.Kany {
+  color: #ffffff;
+  font-size: 35px;
+  user-select: none;
+}
+
+
+.paragraph-text {
+  flex: 1;
+  text-align: left;
+  color: #ffffff;
+  font-size: 25px;
+  user-select: none;
+  margin-top: 300px;
+  text-align: center;
+  text-decoration: solid;
+  
+}
+
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.typing-animation {
+  overflow: hidden; /* Hide overflow text */
+  white-space: nowrap; /* Prevent line breaks */
+  letter-spacing: .15em; /* Adjust letter spacing for typewriter effect */
+  animation: typing 3s steps(20) infinite;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 10;
+  }
+}
+
+.typed-text {
+  color: #4169E1;
+  font-size: 35px;
+  user-select: none;
+}
+
