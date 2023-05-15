@@ -82,6 +82,8 @@ nav li a:hover {
   user-select: none;
   margin-top: 300px;
   margin-right: 350px;
+  text-align: center;
+  text-decoration: solid;
 }
 
 
@@ -95,7 +97,7 @@ nav li a:hover {
 .image-container img {
   width: 700px;
   height: 700px;
-  margin-top: 345px;
+  margin-top: 325px;
   margin-right: 100px;
 }
 
@@ -116,7 +118,7 @@ nav li a:hover {
   margin-top: 300px;
   text-align: center;
   text-decoration: solid;
-  
+  margin-left: 10px;
 }
 
 
